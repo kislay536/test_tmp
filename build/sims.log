@@ -1,0 +1,40 @@
+sims -sys=manycore -vlt_run -x_tiles=1 -y_tiles=1 hello_world.c -ariane -rtl_timeout 10000000 
+sims: ====================================================
+sims:   Simulation Script for OpenPiton
+sims:   Modified by Princeton University on June 9th, 2015
+sims: ====================================================
+sims: ====================================================
+sims:   Simulation Script for OpenSPARC T1
+sims:   Copyright (c) 2001-2006 Sun Microsystems, Inc.
+sims:   All rights reserved.
+sims: ====================================================
+sims: start_time Mon 09 Feb 2026 08:57:19 PM IST
+sims: running on kislay
+sims: uname is Linux kislay 6.17.0-14-generic #14~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Jan 15 15:52:10 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+sims: version 2.0
+sims: dv_root /home/kislay/Documents/gsoc/mmpi-orig/piton
+sims: model_dir /home/kislay/Documents/gsoc/mmpi-orig/build
+sims: tre_search /home/kislay/Documents/gsoc/mmpi-orig/piton/tools/env/tools.iver
+sims: using config file /home/kislay/Documents/gsoc/mmpi-orig/piton/tools/src/sims/sims.config (-DFLIST_ARIANE)
+sims: using random seed 0
+sims: network_config not specified, assuming 2dmesh configuration
+sims: Setting UART_DIV_LATCH to 0xb
+sims: locating diag hello_world.c
+sims: Looking for diag under $DV_ROOT/verif/diag
+sims: Found diag under /home/kislay/Documents/gsoc/mmpi-orig/piton/verif/diag/c/riscv/ariane/hello_world.c
+sims: assembling 64bit riscv diag (RV64IMAC)
+sims: rv64_cc diag.c "-DPITON_NUMTILES=1 "
+/home/kislay/scratch/riscv_install/lib/gcc/riscv64-unknown-elf/12.2.0/../../../../riscv64-unknown-elf/bin/ld: warning: diag.exe has a LOAD segment with RWX permissions
+sims: rv64_img
+truncate diag.o -s +4
+sims: /home/kislay/Documents/gsoc/mmpi-orig/build/manycore/rel-0.1/obj_dir/Vcmp_top  +wait_cycle_to_kill=10 +dowarningfinish +doerrorfinish +spc_pipe=0 +TIMEOUT=10000000 +tg_seed=0  +good_trap0=0000000080000554  +bad_trap0=0000000080000556 +asm_diag_name=hello_world.c +dv_root=/home/kislay/Documents/gsoc/mmpi-orig/piton
+sims: LD_LIBRARY_PATH is /home/kislay/scratch/riscv_install/lib:/home/kislay/Documents/gsoc/mmpi-orig/piton/tools/src/goldfinger/lib
+sims: LM_LICENSE_FILE : none
+sims: sim_start Mon 09 Feb 2026 08:57:20 PM IST
+Started
+Vcmp_top created
+Before first ticks
+After very first tick
+Before second ticks
+Before third ticks
+Reset complete

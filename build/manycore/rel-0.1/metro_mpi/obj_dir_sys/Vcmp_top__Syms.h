@@ -1,0 +1,94 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Symbol table internal header
+//
+// Internal details; most calling programs do not need this header,
+// unless using verilator public meta comments.
+
+#ifndef VERILATED_VCMP_TOP__SYMS_H_
+#define VERILATED_VCMP_TOP__SYMS_H_  // guard
+
+#include "verilated.h"
+
+// INCLUDE MODEL CLASS
+
+#include "Vcmp_top.h"
+
+// INCLUDE MODULE CLASSES
+#include "Vcmp_top___024root.h"
+#include "Vcmp_top___024unit.h"
+#include "Vcmp_top_io_xbar_top_wrap.h"
+#include "Vcmp_top_io_xbar_input_top_4.h"
+#include "Vcmp_top_io_xbar_output_top.h"
+#include "Vcmp_top_AXI_BUS__A40_AB40_AC1_AD1.h"
+#include "Vcmp_top_AXI_BUS__AC1_A40_AB40_AD1.h"
+
+// DPI TYPES for DPI Export callbacks (Internal use)
+
+// SYMS CLASS (contains all model state)
+class alignas(VL_CACHE_LINE_BYTES) Vcmp_top__Syms final : public VerilatedSyms {
+  public:
+    // INTERNAL STATE
+    Vcmp_top* const __Vm_modelp;
+    VlDeleter __Vm_deleter;
+    bool __Vm_didInit = false;
+
+    // MODULE INSTANCE STATE
+    Vcmp_top___024root             TOP;
+    Vcmp_top___024unit             TOP____024unit;
+    Vcmp_top_AXI_BUS__AC1_A40_AB40_AD1 TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__i_riscv_peripherals__DOT__br_master;
+    Vcmp_top_AXI_BUS__A40_AB40_AC1_AD1 TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__i_riscv_peripherals__DOT__dm_master;
+    Vcmp_top_AXI_BUS__AC1_A40_AB40_AD1 TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__i_riscv_peripherals__DOT__plic_master;
+    Vcmp_top_io_xbar_top_wrap      TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_0_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_0_output;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_1_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_1_output;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_2_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_2_output;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_3_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_3_output;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_4_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_4_output;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_5_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_5_output;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_6_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_6_output;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_7_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc2__io_xbar_top__DOT__node_7_output;
+    Vcmp_top_io_xbar_top_wrap      TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_0_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_0_output;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_1_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_1_output;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_2_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_2_output;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_3_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_3_output;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_4_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_4_output;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_5_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_5_output;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_6_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_6_output;
+    Vcmp_top_io_xbar_input_top_4   TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_7_input;
+    Vcmp_top_io_xbar_output_top    TOP__cmp_top__DOT__system__DOT__chipset__DOT__chipset_impl__DOT__io_xbar_noc3__io_xbar_top__DOT__node_7_output;
+
+    // SCOPE NAMES
+    VerilatedScope* __Vscopep_cmp_top__system__chipset__chipset_impl__i_riscv_peripherals__i_dm_top__i_dm_csrs;
+    VerilatedScope* __Vscopep_cmp_top__system__chipset__chipset_impl__i_riscv_peripherals__i_dm_top__i_dm_csrs__csr_read_write;
+    VerilatedScope* __Vscopep_cmp_top__system__chipset__chipset_impl__i_riscv_peripherals__i_dm_top__i_dm_mem;
+    VerilatedScope* __Vscopep_cmp_top__system__chipset__chipset_impl__i_riscv_peripherals__i_dm_top__i_dm_mem__p_abstract_cmd_rom;
+    VerilatedScope* __Vscopep_cmp_top__system__chipset__chipset_impl__i_riscv_peripherals__i_dm_top__i_dm_mem__p_rw_logic;
+    VerilatedScope* __Vscopep_cmp_top__system__chipset__chipset_impl__i_riscv_peripherals__i_dmi_jtag__i_dmi_jtag_tap;
+    VerilatedScope* __Vscopep_cmp_top__system__chipset__chipset_impl__i_riscv_peripherals__i_dmi_jtag__i_dmi_jtag_tap__p_out_sel;
+    VerilatedScope* __Vscopep_cmp_top__system__chipset__chipset_impl__i_riscv_peripherals__i_plic__i_plic_regs;
+
+    // CONSTRUCTORS
+    Vcmp_top__Syms(VerilatedContext* contextp, const char* namep, Vcmp_top* modelp);
+    ~Vcmp_top__Syms();
+
+    // METHODS
+    const char* name() const { return TOP.vlNamep; }
+};
+
+#endif  // guard

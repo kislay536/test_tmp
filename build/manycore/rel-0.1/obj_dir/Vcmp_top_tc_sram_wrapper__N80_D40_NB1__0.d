@@ -1,0 +1,2 @@
+Vcmp_top_tc_sram_wrapper__N80_D40_NB1__0.o: \
+ Vcmp_top_tc_sram_wrapper__N80_D40_NB1__0.cpp Vcmp_top__pch.h

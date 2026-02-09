@@ -1,0 +1,5 @@
+Sun 08 Feb 2026 08:29:14 PM IST sims -sys=manycore -x_tiles=2 -y_tiles=2 -vlt_build -ariane -mmpi_o1 
+Mon 09 Feb 2026 08:53:19 PM IST sims -mmpi_coptions 
+Mon 09 Feb 2026 08:53:34 PM IST sims -sys=manycore -x_tiles=1 -y_tiles=1 -vlt_build -ariane 
+Mon 09 Feb 2026 08:55:39 PM IST sims -sys=manycore -vlt_run -x_tiles=1 -y_tiles=1 hello_world.c -ariane -rtl_timeout 10000000 
+Mon 09 Feb 2026 08:57:19 PM IST sims -sys=manycore -vlt_run -x_tiles=1 -y_tiles=1 hello_world.c -ariane -rtl_timeout 10000000 
