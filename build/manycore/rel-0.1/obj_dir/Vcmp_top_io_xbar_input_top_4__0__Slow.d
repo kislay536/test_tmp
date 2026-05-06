@@ -1,2 +1,0 @@
-Vcmp_top_io_xbar_input_top_4__0__Slow.o: \
- Vcmp_top_io_xbar_input_top_4__0__Slow.cpp Vcmp_top__pch.h

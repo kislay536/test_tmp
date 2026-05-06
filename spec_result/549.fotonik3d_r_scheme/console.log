@@ -1,0 +1,95 @@
+Global frequency set at 1000000000000 ticks per second
+build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+0: system.remote_gdb: listening for remote gdb on port 7015
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 22.1.0.0
+gem5 compiled Apr 22 2026 16:27:53
+gem5 started May  3 2026 13:19:17
+gem5 executing on computenode3, pid 2097927
+command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/549.fotonik3d_r_scheme sim/spec/549.fotonik3d_r/sim.py --scheme=Speclfb
+
+Beginning simulation for 549.fotonik3d_r
+Scheme: Speclfb
+Cores: 1
+Binary (relative to speclfb): sim/spec/549.fotonik3d_r/fotonik3d_r_base.mytest
+Core0 args: []
+build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
+build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/549.fotonik3d_r/fotonik3d_r_base.mytest'
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/RISCV/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+ MPI_COMM_SIZE: COMM =            0
+ MPI_COMM_RANK: COMM =            0
+ ================================================================
+ Using 64-bit precision
+ -----------------------------------------------------
+ Master reads the input file yee.dat:
+
+ (px,py,pz) == dims(1:3) =            1           1           1
+ nx_global, ny_global, nz_global =          120         470         120
+ dx, dy, dz =    4.9999999999999998E-008   4.9999999999999998E-008   4.9999999999999998E-008
+ nts =            3
+ out =            0
+ k0 =    0.0000000000000000        1.0000000000000000        0.0000000000000000     
+ Epol =    1.0000000000000000        0.0000000000000000        1.0000000000000000     
+ X0 =    0.0000000000000000        1.0000000000000000        0.0000000000000000     
+ pl =    10.000000000000000     
+ pulse =           -2
+ number_of_runs =            1
+ ds =            1
+ stride =          100
+ comtype =            8
+ CFL =   0.86602540380000004     
+ PEC =            0
+ OBC =            4
+ number_of_PML_cells =            4
+ OBJ =            1
+ POWER =            1
+ Number of Probes =             0
+
+ -----------------------------------------------------
+ *******PLANE SOURCE************************
+ index (y,global):          10
+ index (y,local):          10
+ Plane_Source_block_index =            0
+ Filename:TEwaveguide.m
+ Source_order_of_comp: trains_of_z_values
+ *******************************************
+ Global temporary arrays for iep[xyz] allocated on master
+ size (Mbytes) of each of the three arrays is           25
+ *******MATERIAL****************************
+ Master has completed Mat_init.
+ Fields allocated in UPML_mod, Mbytes used =                    57
+
+ number_of_PML_cells =            4
+ Using polynomial profile for sigma, with degree           4
+ *******POWER*******************************
+ Input file    :   incident_W3PC.def
+ Stride:                   2000
+ Skip:                     5000
+ Filenamebase:     incident_W3PC
+ No. frequencies:           301
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+ First frequency:     100000000000000.00     
+ Last frequency:      300000000000000.00     
+ DFT window start:   2147483647
+ Y-index (global):           50
+ ===========================================
+ incident_W3PC.def will belong to nodes in y-block:            0
+ ===========================================
+ Total number of power coords =         2688
+ Arrays allocated in power_mod, Mbytes used =                    49 my_id =           0
+ Leaving initialization routine init.f90
+ Electromagnetic fields allocated, Mbytes =                   365
+ -----------------------------------------------------
+ (Master) Entering main loop
+ UPML used as OBC!
+ Ending main loop
+=====================================================
+=====================================================
+Exiting @ tick 14737444980000 because exiting with last active thread context
+[RUN] 549.fotonik3d_r: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/549.fotonik3d_r_scheme sim/spec/549.fotonik3d_r/sim.py --scheme=Speclfb

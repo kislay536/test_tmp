@@ -1,0 +1,59 @@
+Global frequency set at 1000000000000 ticks per second
+build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+0: system.remote_gdb: listening for remote gdb on port 7031
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 22.1.0.0
+gem5 compiled Apr 22 2026 16:27:53
+gem5 started May  3 2026 13:19:25
+gem5 executing on computenode3, pid 2098109
+command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/619.lbm_s_scheme sim/spec/619.lbm_s/sim.py --scheme=Speclfb
+
+Beginning simulation for 619.lbm_s
+Scheme: Speclfb
+Cores: 2
+Binary (relative to speclfb): sim/spec/619.lbm_s/lbm_s_base.mytest
+Core0 args: ['20', 'reference.dat', '0', '1', '200_200_260_ldc.of']
+Core1 args: ['20', 'reference.dat', '0', '1', '200_200_260_ldc.of']
+build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
+build/RISCV/sim/syscall_emul.cc:85: warn: ignoring syscall set_robust_list(...)
+      (further warnings will be suppressed)
+build/RISCV/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+build/RISCV/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/619.lbm_s/lbm_s_base.mytest'
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+MAIN_printInfo:
+MAIN_printInfo:
+	grid size      : 200 x 200 x 260 = 10.40 * 10^6 Cells
+	grid size      : 200 x 200 x 260 = 10.40 * 10^6 Cells
+	nTimeSteps     : 20
+	nTimeSteps     : 20
+	result file    : reference.dat
+	result file    : reference.dat
+	action         : nothing
+	action         : nothing
+	simulation type: channel flow
+	simulation type: channel flow
+	obstacle file  : 200_200_260_ldc.of
+
+	obstacle file  : 200_200_260_ldc.of
+
+LBM_showGridStatistics:
+	nObstacleCells: 5552328 nAccelCells:       0 nFluidCells: 4847672
+	minRho: 1.000000 maxRho: 1.000000 Mass: 1.040000e+07
+	minU  : 0.000000 maxU  : 0.000000
+
+LBM_showGridStatistics:
+	nObstacleCells: 5552328 nAccelCells:       0 nFluidCells: 4847672
+	minRho: 1.000000 maxRho: 1.000000 Mass: 1.040000e+07
+	minU  : 0.000000 maxU  : 0.000000
+

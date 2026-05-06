@@ -1,0 +1,67 @@
+Global frequency set at 1000000000000 ticks per second
+build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+0: system.remote_gdb: listening for remote gdb on port 7039
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 22.1.0.0
+gem5 compiled Apr 22 2026 16:27:53
+gem5 started May  3 2026 13:19:26
+gem5 executing on computenode3, pid 2098154
+command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/623.xalancbmk_s_scheme sim/spec/623.xalancbmk_s/sim.py --scheme=Speclfb
+
+Beginning simulation for 623.xalancbmk_s
+Scheme: Speclfb
+Cores: 2
+Binary (relative to speclfb): sim/spec/623.xalancbmk_s/xalancbmk_s_base.mytest
+Core0 args: ['-v', 'test.xml', 'xalanc.xsl']
+Core1 args: ['-v', 'test.xml', 'xalanc.xsl']
+build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
+build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/623.xalancbmk_s/xalancbmk_s_base.mytest'
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/RISCV/mem/coherent_xbar.cc:461: warn: system.l2bus: response UpgradeResp [d0a180:d0a1bf] has no routeTo entry (req=0x56174634ac10, routeTo size=2). Dropping response packet.
+gem5.opt: build/RISCV/mem/packet.hh:1249: T* gem5::Packet::getPtr() [with T = unsigned char]: Assertion `flags.isSet(STATIC_DATA|DYNAMIC_DATA)' failed.
+Program aborted at tick 3001221000
+--- BEGIN LIBC BACKTRACE ---
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1340620)[0x561741762620]
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1363f9c)[0x561741785f9c]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7facc80e9420]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7facc71f800b]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7facc71d7859]
+/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7facc71d7729]
+/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7facc71e8fd6]
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf1fa37)[0x561741341a37]
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf31cf2)[0x561741353cf2]
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf30603)[0x561741352603]
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf16249)[0x561741338249]
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf040c8)[0x5617413260c8]
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xe79587)[0x56174129b587]
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xe7c5a2)[0x56174129e5a2]
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1353b82)[0x561741775b82]
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x137b235)[0x56174179d235]
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x137b85b)[0x56174179d85b]
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x12e1b60)[0x561741703b60]
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x47844e)[0x56174089a44e]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8748)[0x7facc83a0748]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x8dd8)[0x7facc8175f48]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7facc82c2e4b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyFunction_Vectorcall+0x94)[0x7facc83a0124]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7facc816cd6d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x7d86)[0x7facc8174ef6]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7facc82c2e4b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCodeEx+0x42)[0x7facc82c31d2]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCode+0x1f)[0x7facc82c35bf]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x1cfc01)[0x7facc82c7c01]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x25f547)[0x7facc8357547]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7facc816cd6d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x12fd)[0x7facc816e46d]
+--- END LIBC BACKTRACE ---
+[RUN] 623.xalancbmk_s: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/623.xalancbmk_s_scheme sim/spec/623.xalancbmk_s/sim.py --scheme=Speclfb
