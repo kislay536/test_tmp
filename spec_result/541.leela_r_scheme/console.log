@@ -1,68 +1,74 @@
 Global frequency set at 1000000000000 ticks per second
-build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
-0: system.remote_gdb: listening for remote gdb on port 7016
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+system.remote_gdb: Listening for connections on port 7045
 gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 version 22.1.0.0
-gem5 compiled Apr 22 2026 16:27:53
-gem5 started May  3 2026 13:19:17
-gem5 executing on computenode3, pid 2097906
-command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/541.leela_r_scheme sim/spec/541.leela_r/sim.py --scheme=Speclfb
+gem5 version 24.1.0.3
+gem5 compiled May  2 2026 19:08:01
+gem5 started May  3 2026 18:12:38
+gem5 executing on computenode3, pid 2146710
+command line: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/541.leela_r_scheme sim/spec/541.leela_r/sim.py --scheme
 
 Beginning simulation for 541.leela_r
-Scheme: Speclfb
+Scheme enabled: True
 Cores: 1
-Binary (relative to speclfb): sim/spec/541.leela_r/leela_r_base.mytest
+Binary (relative to stict): sim/spec/541.leela_r/leela_r_base.mytest
 Core0 args: ['test.sgf']
-build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
-build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
-      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/541.leela_r/leela_r_base.mytest'
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+warn: Base 10 memory/cache size 16GB will be cast to base 2 size 16GiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 2048kB will be cast to base 2 size 2048KiB.
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/manual-2/sim/spec/541.leela_r/leela_r_base.mytest'
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 Nodes: 1, Win:  0.0%, PV: 
 Nodes: 1001, Win: 16.5%, PV: Q18 S7 
 Nodes: 2001, Win: 16.2%, PV: P19 O12 
@@ -161,136 +167,3 @@ White time: 00:05:00
 
 Nodes: 2870, Win: 13.5%, PV: pass 
 Nodes: 3870, Win: 13.2%, PV: F15 M15 
-Nodes: 4870, Win: 14.1%, PV: F15 M15 Q18 
-Nodes: 5870, Win: 14.9%, PV: F15 M15 Q1 
-Nodes: 6870, Win: 15.8%, PV: F15 M15 P18 G6 
-
- F15 ->    3138 (U: 21.1%) (R: 20.9%:    2701) PV: F15 M15 P18 G6 
-  J5 ->     637 (U: 16.6%) (R: 26.7%:     445) PV: J5 K1 pass 
- P19 ->     209 (U: 13.3%) (R: 25.0%:      92) PV: P19 N14 
-  M6 ->     201 (U: 10.4%) (R: 23.7%:     455) PV: M6 
- G12 ->     178 (U: 20.2%) (R: 20.7%:     332) PV: G12 H16 
- H11 ->     159 (U: 10.0%) (R: 23.7%:     160) PV: H11 K1 
-====================================
-3138 visits, score 21.1% (from 15.8%) PV: F15 M15 P18 G6 
-
-6871 visits, 22746 nodes
-
-
-Passes: 0            Black (X) Prisoners: 13
-White (O) to move    White (O) Prisoners: 13
-
-   a b c d e f g h j k l m n o p q r s t 
-19 . . . X X . O . . . . . . . . . . . . 19
-18 . . . X O O . O O O . . . . . . . . . 18
-17 . . X . X O O X X O X X . X X X X X . 17
-16 . . . X O O . . X X O X O X O O X O . 16
-15 . . X X X(X)O X X O O . X O X . . . . 15
-14 O . O O X . X X O O O . . O O O O O . 14
-13 . O O X X X O O X O . . . . O X X O . 13
-12 X X O O X . . O X O . . . . O X . X . 12
-11 X O . O X . O . X O O X . X O X X X . 11
-10 O . . O X . . . X X O . . . O X . X . 10
- 9 . O O X X X . O X O O . . . X O X O .  9
- 8 O O O O . . O O O X . X . O O O . X .  8
- 7 O X . . X . . X O X . . X O X . O . .  7
- 6 O X O O . . . . X O X . O X . O X . .  6
- 5 O X . . X X . . . O O O O X . . O . .  5
- 4 X O O O . . X X O O O X X X . O . O O  4
- 3 X X X . X X O O X X X O O X . X X X O  3
- 2 X . . X X O . . O O X O . X . . . X X  2
- 1 . . . . . . . . . . X O . . . . . . .  1
-   a b c d e f g h j k l m n o p q r s t 
-
-Hash: BB20690CF056B6DF Ko-Hash: 45B31868B6CF72B8
-
-Black time: 00:05:00
-White time: 00:05:00
-
-Nodes: 3139, Win: 78.8%, PV: 
-Nodes: 4139, Win: 79.4%, PV: M15 pass 
-Nodes: 5139, Win: 79.8%, PV: K1 D7 O9 
-Nodes: 6139, Win: 79.9%, PV: K1 D7 O9 
-Nodes: 7139, Win: 80.2%, PV: K1 D7 G2 
-
-  K1 ->    2034 (U: 81.9%) (R: 82.6%:    2938) PV: K1 D7 G2 
- M15 ->    1738 (U: 80.1%) (R: 76.7%:     254) PV: M15 pass 
- R15 ->     861 (U: 81.2%) (R: 81.0%:    1008) PV: R15 R18 
-  H5 ->     824 (U: 80.8%) (R: 81.8%:     910) PV: H5 N2 S5 
-  M7 ->     308 (U: 81.2%) (R: 81.3%:    1116) PV: M7 C7 
-  L8 ->     221 (U: 80.6%) (R: 79.3%:    1116) PV: L8 
-====================================
-2034 visits, score 81.9% (from 80.2%) PV: K1 D7 G2 
-
-7140 visits, 15992 nodes
-
-
-Passes: 0            Black (X) Prisoners: 13
-Black (X) to move    White (O) Prisoners: 18
-
-   a b c d e f g h j k l m n o p q r s t 
-19 . . . X X . O . . . . . . . . . . . . 19
-18 . . . X O O . O O O . . . . . . . . . 18
-17 . . X . X O O X X O X X . X X X X X . 17
-16 . . . X O O . . X X O X O X O O X O . 16
-15 . . X X X X O X X O O . X O X . . . . 15
-14 O . O O X . X X O O O . . O O O O O . 14
-13 . O O X X X O O X O . . . . O X X O . 13
-12 X X O O X . . O X O . . . . O X . X . 12
-11 X O . O X . O . X O O X . X O X X X . 11
-10 O . . O X . . . X X O . . . O X . X . 10
- 9 . O O X X X . O X O O . . . X O X O .  9
- 8 O O O O . . O O O X . X . O O O . X .  8
- 7 O X . . X . . X O X . . X O X . O . .  7
- 6 O X O O . . . . X O X . O X . O X . .  6
- 5 O X . . X X . . . O O O O X . . O . .  5
- 4 X O O O . . X X O O O X X X . O . O O  4
- 3 X X X . X X O O . . . O O X . X X X O  3
- 2 X . . X X O . . O O . O . X . . . X X  2
- 1 . . . . . . . . .(O). O . . . . . . .  1
-   a b c d e f g h j k l m n o p q r s t 
-
-Hash: FD4E0C32B93F8263 Ko-Hash: EB8086FED12405D6
-
-Black time: 00:05:00
-White time: 00:05:00
-
-Nodes: 2035, Win: 18.1%, PV: pass 
-build/RISCV/mem/coherent_xbar.cc:461: warn: system.l2bus: response UpgradeResp [1574c0:1574ff] has no routeTo entry (req=0x55b8018d1210, routeTo size=1). Dropping response packet.
-gem5.opt: build/RISCV/mem/packet.hh:1249: T* gem5::Packet::getPtr() [with T = unsigned char]: Assertion `flags.isSet(STATIC_DATA|DYNAMIC_DATA)' failed.
-Program aborted at tick 5968236833000
---- BEGIN LIBC BACKTRACE ---
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1340620)[0x55b7de5a7620]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1363f9c)[0x55b7de5caf9c]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f93d94f7420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f93d860600b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f93d85e5859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f93d85e5729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f93d85f6fd6]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf1fa37)[0x55b7de186a37]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf31cf2)[0x55b7de198cf2]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf124e9)[0x55b7de1794e9]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf14798)[0x55b7de17b798]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf04734)[0x55b7de16b734]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8b3052)[0x55b7ddb1a052]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8973be)[0x55b7ddafe3be]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8b16ee)[0x55b7ddb186ee]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x89989a)[0x55b7ddb0089a]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x89a2f5)[0x55b7ddb012f5]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x85e537)[0x55b7ddac5537]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x600518)[0x55b7dd867518]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x5e55f8)[0x55b7dd84c5f8]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x85c45b)[0x55b7ddac345b]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8b4284)[0x55b7ddb1b284]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x897bb1)[0x55b7ddafebb1]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x87eb42)[0x55b7ddae5b42]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8800f8)[0x55b7ddae70f8]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8434be)[0x55b7ddaaa4be]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1353b82)[0x55b7de5bab82]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x137b235)[0x55b7de5e2235]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x137b85b)[0x55b7de5e285b]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x12e1b60)[0x55b7de548b60]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x47844e)[0x55b7dd6df44e]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8748)[0x7f93d97ae748]
---- END LIBC BACKTRACE ---
-[RUN] 541.leela_r: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/541.leela_r_scheme sim/spec/541.leela_r/sim.py --scheme=Speclfb

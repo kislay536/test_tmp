@@ -1,66 +1,36 @@
 Global frequency set at 1000000000000 ticks per second
-build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
-0: system.remote_gdb: listening for remote gdb on port 7012
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+system.remote_gdb: Listening for connections on port 7002
 gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 version 22.1.0.0
-gem5 compiled Apr 22 2026 16:27:53
-gem5 started May  3 2026 13:19:17
-gem5 executing on computenode3, pid 2097810
-command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/511.povray_r_scheme sim/spec/511.povray_r/sim.py --scheme=Speclfb
+gem5 version 24.1.0.3
+gem5 compiled May  2 2026 19:08:01
+gem5 started May  3 2026 18:12:38
+gem5 executing on computenode3, pid 2146601
+command line: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/511.povray_r_scheme sim/spec/511.povray_r/sim.py --scheme
 
 Beginning simulation for 511.povray_r
-Scheme: Speclfb
+Scheme enabled: True
 Cores: 1
-Binary (relative to speclfb): sim/spec/511.povray_r/povray_r_base.mytest
+Binary (relative to stict): sim/spec/511.povray_r/povray_r_base.mytest
 Core0 args: ['SPEC-benchmark-test.ini']
-build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
-build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
-      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/511.povray_r/povray_r_base.mytest'
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/mem/coherent_xbar.cc:461: warn: system.l2bus: response ReadResp [1ba6b0:1ba6b7] has no routeTo entry (req=0x55d7ce541a10, routeTo size=0). Dropping response packet.
-gem5.opt: build/RISCV/mem/protocol/timing.cc:51: bool gem5::TimingRequestProtocol::sendReq(gem5::TimingResponseProtocol*, gem5::PacketPtr): Assertion `pkt->isRequest()' failed.
-Program aborted at tick 4751954000
---- BEGIN LIBC BACKTRACE ---
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1340620)[0x55d7b2f17620]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1363f9c)[0x55d7b2f3af9c]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7fead5444420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7fead455300b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7fead4532859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7fead4532729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7fead4543fd6]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x10ad428)[0x55d7b2c84428]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8b3052)[0x55d7b248a052]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8973be)[0x55d7b246e3be]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8b16ee)[0x55d7b24886ee]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x89989a)[0x55d7b247089a]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x89a2f5)[0x55d7b24712f5]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x85e537)[0x55d7b2435537]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x600518)[0x55d7b21d7518]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x5e55f8)[0x55d7b21bc5f8]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x85c45b)[0x55d7b243345b]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8b4284)[0x55d7b248b284]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x897bb1)[0x55d7b246ebb1]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x87eb42)[0x55d7b2455b42]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8800f8)[0x55d7b24570f8]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8434be)[0x55d7b241a4be]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1353b82)[0x55d7b2f2ab82]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x137b235)[0x55d7b2f52235]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x137b85b)[0x55d7b2f5285b]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x12e1b60)[0x55d7b2eb8b60]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x47844e)[0x55d7b204f44e]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8748)[0x7fead56fb748]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x8dd8)[0x7fead54d0f48]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7fead561de4b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyFunction_Vectorcall+0x94)[0x7fead56fb124]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7fead54c7d6d]
---- END LIBC BACKTRACE ---
-[RUN] 511.povray_r: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/511.povray_r_scheme sim/spec/511.povray_r/sim.py --scheme=Speclfb
+warn: Base 10 memory/cache size 16GB will be cast to base 2 size 16GiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 2048kB will be cast to base 2 size 2048KiB.
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/manual-2/sim/spec/511.povray_r/povray_r_base.mytest'
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+Exiting @ tick 1620345151000 because exiting with last active thread context
+[RUN] 511.povray_r: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/511.povray_r_scheme sim/spec/511.povray_r/sim.py --scheme

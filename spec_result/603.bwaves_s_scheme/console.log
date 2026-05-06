@@ -1,38 +1,47 @@
 Global frequency set at 1000000000000 ticks per second
-build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
-0: system.remote_gdb: listening for remote gdb on port 7025
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+system.remote_gdb: Listening for connections on port 7048
 gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 version 22.1.0.0
-gem5 compiled Apr 22 2026 16:27:53
-gem5 started May  3 2026 13:19:25
-gem5 executing on computenode3, pid 2098079
-command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/603.bwaves_s_scheme sim/spec/603.bwaves_s/sim.py --scheme=Speclfb
+gem5 version 24.1.0.3
+gem5 compiled May  2 2026 19:08:01
+gem5 started May  3 2026 18:12:44
+gem5 executing on computenode3, pid 2146901
+command line: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/603.bwaves_s_scheme sim/spec/603.bwaves_s/sim.py --scheme
 
 Beginning simulation for 603.bwaves_s
-Scheme: Speclfb
+Scheme enabled: True
 Cores: 2
-Binary (relative to speclfb): sim/spec/603.bwaves_s/speed_bwaves_base.mytest
+Binary (relative to stict): sim/spec/603.bwaves_s/speed_bwaves_base.mytest
 Core0 args: ['bwaves_1']
-Core0 stdin: /home/riscv_sec/stict/working/speclfb2/sim/spec/603.bwaves_s/bwaves_1.in
+Core0 stdin: /home/riscv_sec/stict/working/manual-2/sim/spec/603.bwaves_s/bwaves_1.in
 Core1 args: ['bwaves_2']
-Core1 stdin: /home/riscv_sec/stict/working/speclfb2/sim/spec/603.bwaves_s/bwaves_2.in
-build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
-build/RISCV/sim/syscall_emul.cc:85: warn: ignoring syscall set_robust_list(...)
+Core1 stdin: /home/riscv_sec/stict/working/manual-2/sim/spec/603.bwaves_s/bwaves_2.in
+warn: Base 10 memory/cache size 16GB will be cast to base 2 size 16GiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 2048kB will be cast to base 2 size 2048KiB.
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.cc:97: warn: ignoring syscall set_robust_list(...)
       (further warnings will be suppressed)
-build/RISCV/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigaction(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigaction(...)
       (further warnings will be suppressed)
-build/RISCV/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigprocmask(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigprocmask(...)
       (further warnings will be suppressed)
-build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
-      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/603.bwaves_s/speed_bwaves_base.mytest'
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
-build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/manual-2/sim/spec/603.bwaves_s/speed_bwaves_base.mytest'
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
  BI-CGSTAB & symmetric difference scheme 
  BI-CGSTAB & symmetric difference scheme 
  3D  Laminar shock wave propagation
@@ -55,23 +64,41 @@ build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
  Time step:      1  dt:    0.61535116196E-03
     0.99769940128E-02    0.10000000000E-02
     0.99769940128E-02    0.10000000000E-02
- Time step:      2  dt:    0.99453267722E-03
  Time step:      2  dt:    0.10200335149E-02
+ Time step:      2  dt:    0.99453267722E-03
     0.67716135632E-01    0.10000000000E-02
     0.61194251817E-01    0.10000000000E-02
- Time step:      3  dt:    0.12702992316E-02
  Time step:      3  dt:    0.13108268426E-02
-    0.13111581525        0.10000000000E-02
+ Time step:      3  dt:    0.12702992316E-02
     0.14776034444        0.10000000000E-02
+    0.13111581525        0.10000000000E-02
  Time step:      4  dt:    0.15922596110E-02
  Time step:      4  dt:    0.15370978151E-02
     0.23561846648        0.10000000000E-02
     0.20794250789        0.10000000000E-02
- Time step:      5  dt:    0.18156103642E-02
  Time step:      5  dt:    0.18868289613E-02
+ Time step:      5  dt:    0.18156103642E-02
     0.32698663814        0.10000000000E-02
     0.28770560134        0.10000000000E-02
- Time step:      6  dt:    0.21151441058E-02
  Time step:      6  dt:    0.22048372780E-02
-    0.38694796237        0.10000000000E-02
+ Time step:      6  dt:    0.21151441058E-02
     0.44319052934        0.10000000000E-02
+    0.38694796237        0.10000000000E-02
+ Time step:      7  dt:    0.25396806361E-02
+ Time step:      7  dt:    0.24426839623E-02
+    0.62889598859        0.10000000000E-02
+    0.55292108997        0.10000000000E-02
+ Time step:      8  dt:    0.27987062910E-02
+ Time step:      8  dt:    0.26837217900E-02
+    0.82142204130        0.10000000000E-02
+    0.71330439528        0.10000000000E-02
+ Time step:      9  dt:    0.31281602944E-02
+ Time step:      9  dt:    0.29864459064E-02
+     1.1335613452        0.10000000000E-02
+    0.97996391635        0.10000000000E-02
+ Time step:     10  dt:    0.35156102908E-02
+ Time step:     10  dt:    0.33458561367E-02
+     1.4895894058        0.10000000000E-02
+     1.2982777522        0.10000000000E-02
+Exiting @ tick 17493675425000 because exiting with last active thread context
+[RUN] 603.bwaves_s: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/603.bwaves_s_scheme sim/spec/603.bwaves_s/sim.py --scheme

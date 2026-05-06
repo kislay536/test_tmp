@@ -1,27 +1,33 @@
 Global frequency set at 1000000000000 ticks per second
-build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
-0: system.remote_gdb: listening for remote gdb on port 7019
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+system.remote_gdb: Listening for connections on port 7046
 gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 version 22.1.0.0
-gem5 compiled Apr 22 2026 16:27:53
-gem5 started May  3 2026 13:19:17
-gem5 executing on computenode3, pid 2097928
-command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/554.roms_r_scheme sim/spec/554.roms_r/sim.py --scheme=Speclfb
+gem5 version 24.1.0.3
+gem5 compiled May  2 2026 19:08:01
+gem5 started May  3 2026 18:12:38
+gem5 executing on computenode3, pid 2146718
+command line: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/554.roms_r_scheme sim/spec/554.roms_r/sim.py --scheme
 
 Beginning simulation for 554.roms_r
-Scheme: Speclfb
+Scheme enabled: True
 Cores: 1
-Binary (relative to speclfb): sim/spec/554.roms_r/roms_r_base.mytest
+Binary (relative to stict): sim/spec/554.roms_r/roms_r_base.mytest
 Core0 args: []
-Core0 stdin: /home/riscv_sec/stict/working/speclfb2/sim/spec/554.roms_r/ocean_benchmark0.in.x
-build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
-build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
-      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/554.roms_r/roms_r_base.mytest'
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
-build/RISCV/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigaction(...)
+Core0 stdin: /home/riscv_sec/stict/working/manual-2/sim/spec/554.roms_r/ocean_benchmark0.in.x
+warn: Base 10 memory/cache size 16GB will be cast to base 2 size 16GiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 2048kB will be cast to base 2 size 2048KiB.
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/manual-2/sim/spec/554.roms_r/roms_r_base.mytest'
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigaction(...)
       (further warnings will be suppressed)
  Process Information:
 
@@ -29,10 +35,10 @@ build/RISCV/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigaction(...)
  Model Input Parameters:  ROMS/TOMS version 3.2  
                           
  -----------------------------------------------------------------------------
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 
  Benchmark Test, Idealized Southern Ocean, Small Grid
  Version adapted for spec, built without netcdf
@@ -58,7 +64,7 @@ build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
  =============================
 
           5  ntimes          Number of timesteps for 3-D equations.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
     500.000  dt              Timestep size (s) for 3-D equations.
          20  ndtfast         Number of timesteps for 2-D equations between
                                each 3D timestep.
@@ -293,5 +299,5 @@ NL ROMS/TOMS: started time-stepping: (Grid: 01 TimeSteps: 00000001 - 00000005)
  ROMS/TOMS - Output NetCDF summary for Grid 01:
 
  ROMS/TOMS: DONE... 
-Exiting @ tick 20482112892000 because exiting with last active thread context
-[RUN] 554.roms_r: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/554.roms_r_scheme sim/spec/554.roms_r/sim.py --scheme=Speclfb
+Exiting @ tick 11575426159000 because exiting with last active thread context
+[RUN] 554.roms_r: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/554.roms_r_scheme sim/spec/554.roms_r/sim.py --scheme

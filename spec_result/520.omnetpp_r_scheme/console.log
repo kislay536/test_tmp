@@ -1,101 +1,73 @@
 Global frequency set at 1000000000000 ticks per second
-build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
-0: system.remote_gdb: listening for remote gdb on port 7017
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+system.remote_gdb: Listening for connections on port 7027
 gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 version 22.1.0.0
-gem5 compiled Apr 22 2026 16:27:53
-gem5 started May  3 2026 13:19:17
-gem5 executing on computenode3, pid 2097830
-command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/520.omnetpp_r_scheme sim/spec/520.omnetpp_r/sim.py --scheme=Speclfb
+gem5 version 24.1.0.3
+gem5 compiled May  2 2026 19:08:01
+gem5 started May  3 2026 18:12:38
+gem5 executing on computenode3, pid 2146618
+command line: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/520.omnetpp_r_scheme sim/spec/520.omnetpp_r/sim.py --scheme
 
 Beginning simulation for 520.omnetpp_r
-Scheme: Speclfb
+Scheme enabled: True
 Cores: 1
-Binary (relative to speclfb): sim/spec/520.omnetpp_r/omnetpp_r_base.mytest
+Binary (relative to stict): sim/spec/520.omnetpp_r/omnetpp_r_base.mytest
 Core0 args: ['-c', 'General', '-r', '0']
-build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
-build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
-      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/520.omnetpp_r/omnetpp_r_base.mytest'
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+warn: Base 10 memory/cache size 16GB will be cast to base 2 size 16GiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 2048kB will be cast to base 2 size 2048KiB.
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/manual-2/sim/spec/520.omnetpp_r/omnetpp_r_base.mytest'
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 OMNeT++ Discrete Event Simulation  (C) 1992-2008 Andras Varga, OpenSim Ltd.
 Version: 4.0, build: 090310-10709, edition: Academic Public License -- NOT FOR COMMERCIAL USE
 See the license for distribution terms and warranty disclaimer
 Setting up Cmdenv...
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 Loading NED files from a SPEC directory 13
 
 Preparing for running configuration General, run #0...
 Scenario: $repetition=0
 Assigned runID=speccpu-runid
 Setting up network `largeNet'...
-build/RISCV/mem/coherent_xbar.cc:461: warn: system.l2bus: response UpgradeResp [345240:34527f] has no routeTo entry (req=0x55bba34cdc10, routeTo size=0). Dropping response packet.
-gem5.opt: build/RISCV/mem/protocol/timing.cc:82: bool gem5::TimingResponseProtocol::sendResp(gem5::TimingRequestProtocol*, gem5::PacketPtr): Assertion `pkt->isResponse()' failed.
-Program aborted at tick 10061978000
---- BEGIN LIBC BACKTRACE ---
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1340620)[0x55bb751f0620]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1363f9c)[0x55bb75213f9c]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f3815495420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f38145a400b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f3814583859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f3814583729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f3814594fd6]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x10ad528)[0x55bb74f5d528]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xe79587)[0x55bb74d29587]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xe7c5a2)[0x55bb74d2c5a2]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1353b82)[0x55bb75203b82]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x137b235)[0x55bb7522b235]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x137b85b)[0x55bb7522b85b]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x12e1b60)[0x55bb75191b60]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x47844e)[0x55bb7432844e]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8748)[0x7f381574c748]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x8dd8)[0x7f3815521f48]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7f381566ee4b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyFunction_Vectorcall+0x94)[0x7f381574c124]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7f3815518d6d]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x7d86)[0x7f3815520ef6]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7f381566ee4b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCodeEx+0x42)[0x7f381566f1d2]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCode+0x1f)[0x7f381566f5bf]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x1cfc01)[0x7f3815673c01]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x25f547)[0x7f3815703547]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7f3815518d6d]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x12fd)[0x7f381551a46d]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x8006b)[0x7f381552406b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyVectorcall_Call+0x60)[0x7f381574c840]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x12eb077)[0x55bb7519b077]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x45af28)[0x55bb7430af28]
---- END LIBC BACKTRACE ---
-[RUN] 520.omnetpp_r: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/520.omnetpp_r_scheme sim/spec/520.omnetpp_r/sim.py --scheme=Speclfb
+Initializing...
+
+Running simulation...
+** Event #1   T=0   Elapsed: 0.000s (0m 00s)  0% completed   ev/sec=0

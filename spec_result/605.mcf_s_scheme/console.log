@@ -1,28 +1,37 @@
 Global frequency set at 1000000000000 ticks per second
-build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
-0: system.remote_gdb: listening for remote gdb on port 7024
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+system.remote_gdb: Listening for connections on port 7059
 gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 version 22.1.0.0
-gem5 compiled Apr 22 2026 16:27:53
-gem5 started May  3 2026 13:19:25
-gem5 executing on computenode3, pid 2098097
-command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/605.mcf_s_scheme sim/spec/605.mcf_s/sim.py --scheme=Speclfb
+gem5 version 24.1.0.3
+gem5 compiled May  2 2026 19:08:01
+gem5 started May  3 2026 18:12:44
+gem5 executing on computenode3, pid 2146913
+command line: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/605.mcf_s_scheme sim/spec/605.mcf_s/sim.py --scheme
 
 Beginning simulation for 605.mcf_s
-Scheme: Speclfb
+Scheme enabled: True
 Cores: 2
-Binary (relative to speclfb): sim/spec/605.mcf_s/mcf_s_base.mytest
+Binary (relative to stict): sim/spec/605.mcf_s/mcf_s_base.mytest
 Core0 args: ['inp.in']
 Core1 args: ['inp.in']
-build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
-build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
-      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/605.mcf_s/mcf_s_base.mytest'
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
-build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+warn: Base 10 memory/cache size 16GB will be cast to base 2 size 16GiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 2048kB will be cast to base 2 size 2048KiB.
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/manual-2/sim/spec/605.mcf_s/mcf_s_base.mytest'
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 
 
 MCF SPEC CPU version 1.11
@@ -40,58 +49,59 @@ Copyright (c) 2006-2010 Dres. Loebel, Borndoerfer & Weider GbR (LBW)
 nodes                      : 5985
 nodes                      : 5985
 active arcs                : 102404
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 active arcs                : 102404
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/mem/coherent_xbar.cc:461: warn: system.l2bus: response ReadResp [130bb10:130bb17] has no routeTo entry (req=0x55fdb7320910, routeTo size=4). Dropping response packet.
-gem5.opt: build/RISCV/mem/protocol/timing.cc:51: bool gem5::TimingRequestProtocol::sendReq(gem5::TimingResponseProtocol*, gem5::PacketPtr): Assertion `pkt->isRequest()' failed.
-Program aborted at tick 154925301000
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+gem5.opt: src/mem/cache/base.cc:1557: gem5::CacheBlk* gem5::BaseCache::handleFill(gem5::PacketPtr, gem5::CacheBlk*, gem5::PacketList&, bool): Assertion `pkt->hasData() || pkt->cmd == MemCmd::InvalidateResp' failed.
+Program aborted at tick 264581897000
 --- BEGIN LIBC BACKTRACE ---
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1340620)[0x55fda311f620]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1363f9c)[0x55fda3142f9c]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7fe95d423420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7fe95c53200b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7fe95c511859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7fe95c511729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7fe95c522fd6]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x10ad428)[0x55fda2e8c428]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8b3052)[0x55fda2692052]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8973be)[0x55fda26763be]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8b16ee)[0x55fda26906ee]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x89989a)[0x55fda267889a]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x89a2f5)[0x55fda26792f5]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x85e537)[0x55fda263d537]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x600518)[0x55fda23df518]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x5e55f8)[0x55fda23c45f8]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x85c45b)[0x55fda263b45b]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8b4284)[0x55fda2693284]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x897bb1)[0x55fda2676bb1]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x87eb42)[0x55fda265db42]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8800f8)[0x55fda265f0f8]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x8434be)[0x55fda26224be]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1353b82)[0x55fda3132b82]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x137b235)[0x55fda315a235]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x137b85b)[0x55fda315a85b]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x12e1b60)[0x55fda30c0b60]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x47844e)[0x55fda225744e]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8748)[0x7fe95d6da748]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x8dd8)[0x7fe95d4aff48]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7fe95d5fce4b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyFunction_Vectorcall+0x94)[0x7fe95d6da124]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7fe95d4a6d6d]
+/home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt(_ZN4gem515print_backtraceEv+0x30)[0x557f3eec5260]
+/home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt(_ZN4gem512abortHandlerEi+0x4c)[0x557f3eee8fbc]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7f5669587420]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f56686bb00b]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7f566869a859]
+/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7f566869a729]
+/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7f56686abfd6]
+/home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt(_ZN4gem59BaseCache10handleFillEPNS_6PacketEPNS_8CacheBlkERNSt7__cxx114listIS2_SaIS2_EEEb+0x95c)[0x557f3e92f00c]
+/home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt(_ZN4gem59BaseCache14recvTimingRespEPNS_6PacketE+0x418)[0x557f3e92f5c8]
+/home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt(_ZThn72_N4gem59BaseCache11MemSidePort14recvTimingRespEPNS_6PacketE+0x18)[0x557f3e922688]
+/home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt(_ZN4gem515RespPacketQueue10sendTimingEPNS_6PacketE+0x37)[0x557f3e893f17]
+/home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt(+0x1e26bc2)[0x557f3e896bc2]
+/home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt(_ZN4gem510EventQueue10serviceOneEv+0xc2)[0x557f3eed9162]
+/home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt(_ZN4gem59doSimLoopEPNS_10EventQueueE+0x68)[0x557f3ef02188]
+/home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt(_ZN4gem58simulateEm+0x28b)[0x557f3ef0281b]
+/home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt(+0x23e0b20)[0x557f3ee50b20]
+/home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt(+0xe3fd94)[0x557f3d8afd94]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8748)[0x7f566983e748]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x8dd8)[0x7f5669613f48]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7f5669760e4b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyFunction_Vectorcall+0x94)[0x7f566983e124]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7f566960ad6d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x7d86)[0x7f5669612ef6]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7f5669760e4b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCodeEx+0x42)[0x7f56697611d2]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCode+0x1f)[0x7f56697615bf]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x1cfc01)[0x7f5669765c01]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x25f547)[0x7f56697f5547]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7f566960ad6d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x12fd)[0x7f566960c46d]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x8006b)[0x7f566961606b]
+/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyVectorcall_Call+0x60)[0x7f566983e840]
 --- END LIBC BACKTRACE ---
-[RUN] 605.mcf_s: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/605.mcf_s_scheme sim/spec/605.mcf_s/sim.py --scheme=Speclfb
+For more info on how to address this issue, please visit https://www.gem5.org/documentation/general_docs/common-errors/ 
+
+[RUN] 605.mcf_s: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/605.mcf_s_scheme sim/spec/605.mcf_s/sim.py --scheme

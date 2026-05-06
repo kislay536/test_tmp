@@ -1,41 +1,50 @@
 Global frequency set at 1000000000000 ticks per second
-build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
-0: system.remote_gdb: listening for remote gdb on port 7035
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+system.remote_gdb: Listening for connections on port 7050
 gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 version 22.1.0.0
-gem5 compiled Apr 22 2026 16:27:53
-gem5 started May  3 2026 13:19:26
-gem5 executing on computenode3, pid 2098209
-command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/644.nab_s_scheme sim/spec/644.nab_s/sim.py --scheme=Speclfb
+gem5 version 24.1.0.3
+gem5 compiled May  2 2026 19:08:01
+gem5 started May  3 2026 18:12:44
+gem5 executing on computenode3, pid 2147021
+command line: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/644.nab_s_scheme sim/spec/644.nab_s/sim.py --scheme
 
 Beginning simulation for 644.nab_s
-Scheme: Speclfb
+Scheme enabled: True
 Cores: 2
-Binary (relative to speclfb): sim/spec/644.nab_s/nab_s_base.mytest
+Binary (relative to stict): sim/spec/644.nab_s/nab_s_base.mytest
 Core0 args: ['hkrdenq', '1930344093', '1000']
 Core1 args: ['hkrdenq', '1930344093', '1000']
-build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
-build/RISCV/sim/syscall_emul.cc:85: warn: ignoring syscall set_robust_list(...)
+warn: Base 10 memory/cache size 16GB will be cast to base 2 size 16GiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 2048kB will be cast to base 2 size 2048KiB.
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.cc:97: warn: ignoring syscall set_robust_list(...)
       (further warnings will be suppressed)
-build/RISCV/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigaction(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigaction(...)
       (further warnings will be suppressed)
-build/RISCV/sim/syscall_emul.cc:85: warn: ignoring syscall rt_sigprocmask(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigprocmask(...)
       (further warnings will be suppressed)
-build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
-      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/644.nab_s/nab_s_base.mytest'
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
-build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/manual-2/sim/spec/644.nab_s/nab_s_base.mytest'
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+nabmd hkrdenq 1930344093
+
 nabmd hkrdenq 1930344093
 
 Reading .pdb file (hkrdenq/hkrdenq.pdb)
-nabmd hkrdenq 1930344093
-
 Reading .pdb file (hkrdenq/hkrdenq.pdb)
 Reading .prm file (hkrdenq/hkrdenq.prm)
 Reading .prm file (hkrdenq/hkrdenq.prm)
@@ -47,10 +56,10 @@ title:
       iter    Total
 ff:     0   -680.86
 ff:     0   -680.86
-Initial energy is -680.8606420
 Initial energy is -680.8606420
 Starting molecular dynamics with Born solvation energy...
 
+Initial energy is -680.8606420
 Starting molecular dynamics with Born solvation energy...
 
       iter    Total
@@ -83,5 +92,5 @@ ff:  1000   -471.99
 ff:  1000   -471.99
 
 ...Done, md returns 0
-Exiting @ tick 9962808603000 because exiting with last active thread context
-[RUN] 644.nab_s: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/644.nab_s_scheme sim/spec/644.nab_s/sim.py --scheme=Speclfb
+Exiting @ tick 9895769562000 because exiting with last active thread context
+[RUN] 644.nab_s: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/644.nab_s_scheme sim/spec/644.nab_s/sim.py --scheme

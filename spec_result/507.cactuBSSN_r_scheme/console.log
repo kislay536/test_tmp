@@ -1,25 +1,31 @@
 Global frequency set at 1000000000000 ticks per second
-build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
-0: system.remote_gdb: listening for remote gdb on port 7004
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+system.remote_gdb: Listening for connections on port 7024
 gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 version 22.1.0.0
-gem5 compiled Apr 22 2026 16:27:53
-gem5 started May  3 2026 13:19:17
-gem5 executing on computenode3, pid 2097778
-command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/507.cactuBSSN_r_scheme sim/spec/507.cactuBSSN_r/sim.py --scheme=Speclfb
+gem5 version 24.1.0.3
+gem5 compiled May  2 2026 19:08:01
+gem5 started May  3 2026 18:12:37
+gem5 executing on computenode3, pid 2146562
+command line: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/507.cactuBSSN_r_scheme sim/spec/507.cactuBSSN_r/sim.py --scheme
 
 Beginning simulation for 507.cactuBSSN_r
-Scheme: Speclfb
+Scheme enabled: True
 Cores: 1
-Binary (relative to speclfb): sim/spec/507.cactuBSSN_r/cactusBSSN_r_base.mytest
+Binary (relative to stict): sim/spec/507.cactuBSSN_r/cactusBSSN_r_base.mytest
 Core0 args: ['spec_test.par']
-build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
-build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
-      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/507.cactuBSSN_r/cactusBSSN_r_base.mytest'
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+warn: Base 10 memory/cache size 16GB will be cast to base 2 size 16GiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 2048kB will be cast to base 2 size 2048KiB.
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/manual-2/sim/spec/507.cactuBSSN_r/cactusBSSN_r_base.mytest'
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 --------------------------------------------------------------------------------
 
        10                                  
@@ -38,13 +44,99 @@ Parameter file:    spec_test.par
 --------------------------------------------------------------------------------
 
 Activating thorn Cactus...Success -> active implementation Cactus
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-gem5 has encountered a segmentation fault!
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+Activation requested for 
+--->PUGH PUGHInterp PUGHReduce PUGHSlab Boundary CartGrid3D CoordBase LocalReduce SymBase ADMBase ADMCoupling ADMMacros CoordGauge StaticConformal Time MoL ML_BSSN ML_BSSN_Helper GaugeWave IOBasic IOASCII IOUtil <---
+Thorn GaugeWave requests automatic activation of GenericFD
+Activating thorn ADMBase...Success -> active implementation ADMBase
+Activating thorn ADMCoupling...Success -> active implementation ADMCoupling
+Activating thorn ADMMacros...Success -> active implementation ADMMacros
+Activating thorn Boundary...Success -> active implementation boundary
+Activating thorn CartGrid3D...Success -> active implementation grid
+Activating thorn CoordBase...Success -> active implementation CoordBase
+Activating thorn CoordGauge...Success -> active implementation CoordGauge
+Activating thorn GaugeWave...Success -> active implementation GaugeWave
+Activating thorn GenericFD...Success -> active implementation GenericFD
+Activating thorn IOASCII...Success -> active implementation IOASCII
+Activating thorn IOBasic...Success -> active implementation IOBasic
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn LocalReduce...Success -> active implementation LocalReduce
+Activating thorn ML_BSSN...Success -> active implementation ML_BSSN
+Activating thorn ML_BSSN_Helper...Success -> active implementation ML_BSSN_Helper
+Activating thorn MoL...Success -> active implementation MethodOfLines
+Activating thorn PUGH...Success -> active implementation Driver
+Activating thorn PUGHInterp...Success -> active implementation Interp
+Activating thorn PUGHReduce...Success -> active implementation Reduce
+Activating thorn PUGHSlab...Success -> active implementation Hyperslab
+Activating thorn StaticConformal...Success -> active implementation StaticConformal
+Activating thorn SymBase...Success -> active implementation SymBase
+Activating thorn Time...Success -> active implementation time
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+INFO (PUGH): Using physical to logical mappings: direct
+INFO (PUGH): Using topology generator: automatic
+--------------------------------------------------------------------------------
+GaugeWave
+--------------------------------------------------------------------------------
+Driver provided by PUGH
+--------------------------------------------------------------------------------
+ML_BSSN
+--------------------------------------------------------------------------------
+MoL: Generalized time integration.
+--------------------------------------------------------------------------------
 
---- BEGIN LIBC BACKTRACE ---
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1340620)[0x55e850875620]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1363e05)[0x55e850898e05]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7fdbd632e420]
-[0x55e881fbd110]
---- END LIBC BACKTRACE ---
-[RUN] 507.cactuBSSN_r: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/507.cactuBSSN_r_scheme sim/spec/507.cactuBSSN_r/sim.py --scheme=Speclfb
+INFO (PUGH): Not setting up a topology for 1 dimensions
+INFO (PUGH): Not setting up a topology for 2 dimensions
+INFO (PUGH): Setting up a topology for 3 dimensions
+INFO (IOASCII): I/O Method 'IOASCII_1D' registered: output of 1D lines of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 1D output every 1 iterations
+INFO (IOASCII): Periodic 1D output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+INFO (IOASCII): I/O Method 'IOASCII_2D' registered: output of 2D planes of grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 2D output turned off
+INFO (IOASCII): I/O Method 'IOASCII_3D' registered: output of 3D grid functions/arrays to ASCII files
+INFO (IOASCII): Periodic 3D output turned off
+INFO (IOBasic): I/O Method 'Scalar' registered: output of scalar quantities (grid scalars, reductions) to ASCII files
+INFO (IOBasic): I/O Method 'Info' registered: output of scalar quantities (grid scalars, reductions) to screen
+INFO (MoL): Using Runge-Kutta 3 as the time integrator.
+INFO (MoL): The maximum number of evolved variables is 25. 25 are registered.
+INFO (MoL): The maximum number of constrained variables is 20. 20 are registered.
+INFO (MoL): The maximum number of SandR variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of evolved complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of constrained complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum number of SandR complex array variables is 0. 0 are registered.
+INFO (MoL): The maximum size of any array variables is 0.
+INFO (ADMMacros): Spatial finite differencing order: 2
+INFO (CartGrid3D): Grid Spacings:
+INFO (CartGrid3D): dx=>1.0000000e-01  dy=>1.0000000e-01  dz=>1.0000000e-01
+INFO (CartGrid3D): Computational Coordinates:
+INFO (CartGrid3D): x=>[-0.200, 3.900]  y=>[-0.200, 3.900]  z=>[-0.200, 3.900]
+INFO (CartGrid3D): Indices of Physical Coordinates:
+INFO (CartGrid3D): x=>[0,41]  y=>[0,41]  z=>[0,41]
+INFO (PUGH): Single processor evolution
+INFO (PUGH): 3-dimensional grid functions
+INFO (PUGH):   Size: 42 42 42
+INFO (Time): Timestep set to 0.025 (courant_static)
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+INFO (IOBasic): Periodic info output requested for 'ADMBASE::gxx', 'ADMBASE::gxy'
+-------------------------------------------------------------------------------
+   it  |          | ADMBASE::gxx                | ADMBASE::gxy                |
+       |    t     | minimum      | maximum      | minimum      | maximum      |
+-------------------------------------------------------------------------------
+     0 |    0.000 |   0.96829812 |   1.03170188 |  -0.03170188 |   0.03170188 |
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+     1 |    0.025 |   0.96581962 |   1.03402338 |  -0.03354010 |   0.03342608 |
+     2 |    0.050 |   0.96463574 |   1.03499120 |  -0.03454845 |   0.03409070 |
+     3 |    0.075 |   0.96189543 |   1.04025080 |  -0.04273456 |   0.04115623 |
+     4 |    0.100 |   0.95635044 |   1.04479427 |  -0.05083347 |   0.04823882 |
+     5 |    0.125 |   0.94939011 |   1.05313616 |  -0.05746441 |   0.05438592 |
+     6 |    0.150 |   0.93411415 |   1.07117441 |  -0.06090247 |   0.05825198 |
+     7 |    0.175 |   0.92115474 |   1.08939575 |  -0.06418088 |   0.05847160 |
+     8 |    0.200 |   0.89816333 |   1.10571741 |  -0.08037256 |   0.06699347 |
+Exiting @ tick 30000000000000 because simulate() limit reached
+[RUN] 507.cactuBSSN_r: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/507.cactuBSSN_r_scheme sim/spec/507.cactuBSSN_r/sim.py --scheme

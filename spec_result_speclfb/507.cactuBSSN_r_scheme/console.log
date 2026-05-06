@@ -1,0 +1,50 @@
+Global frequency set at 1000000000000 ticks per second
+build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+0: system.remote_gdb: listening for remote gdb on port 7004
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 22.1.0.0
+gem5 compiled Apr 22 2026 16:27:53
+gem5 started May  3 2026 13:19:17
+gem5 executing on computenode3, pid 2097778
+command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/507.cactuBSSN_r_scheme sim/spec/507.cactuBSSN_r/sim.py --scheme=Speclfb
+
+Beginning simulation for 507.cactuBSSN_r
+Scheme: Speclfb
+Cores: 1
+Binary (relative to speclfb): sim/spec/507.cactuBSSN_r/cactusBSSN_r_base.mytest
+Core0 args: ['spec_test.par']
+build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
+build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/507.cactuBSSN_r/cactusBSSN_r_base.mytest'
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.2.1    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.2.1
+Parameter file:    spec_test.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+gem5 has encountered a segmentation fault!
+
+--- BEGIN LIBC BACKTRACE ---
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1340620)[0x55e850875620]
+/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1363e05)[0x55e850898e05]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7fdbd632e420]
+[0x55e881fbd110]
+--- END LIBC BACKTRACE ---
+[RUN] 507.cactuBSSN_r: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/507.cactuBSSN_r_scheme sim/spec/507.cactuBSSN_r/sim.py --scheme=Speclfb

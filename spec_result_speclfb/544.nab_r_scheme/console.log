@@ -1,0 +1,50 @@
+Global frequency set at 1000000000000 ticks per second
+build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+0: system.remote_gdb: listening for remote gdb on port 7013
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 22.1.0.0
+gem5 compiled Apr 22 2026 16:27:53
+gem5 started May  3 2026 13:19:17
+gem5 executing on computenode3, pid 2097919
+command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/544.nab_r_scheme sim/spec/544.nab_r/sim.py --scheme=Speclfb
+
+Beginning simulation for 544.nab_r
+Scheme: Speclfb
+Cores: 1
+Binary (relative to speclfb): sim/spec/544.nab_r/nab_r_base.mytest
+Core0 args: ['hkrdenq', '1930344093', '1000']
+build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
+build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/544.nab_r/nab_r_base.mytest'
+build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+nabmd hkrdenq 1930344093
+
+Reading .pdb file (hkrdenq/hkrdenq.pdb)
+Reading .prm file (hkrdenq/hkrdenq.prm)
+title:
+                                                                                
+      iter    Total
+ff:     0   -680.86
+Initial energy is -680.8606420
+Starting molecular dynamics with Born solvation energy...
+
+      iter    Total
+ff:     0   -680.86
+ff:  1000   -647.23
+
+...Done, md returns 0
+      iter    Total
+ff:     0   -198.97
+Initial energy is -198.9739930
+Starting molecular dynamics with in vaccuo non-bonded energy...
+
+      iter    Total
+ff:     0   -198.97
+ff:  1000   -471.99
+
+...Done, md returns 0
+Exiting @ tick 6454211479000 because exiting with last active thread context
+[RUN] 544.nab_r: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/544.nab_r_scheme sim/spec/544.nab_r/sim.py --scheme=Speclfb

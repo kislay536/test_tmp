@@ -1,65 +1,37 @@
 Global frequency set at 1000000000000 ticks per second
-build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
-0: system.remote_gdb: listening for remote gdb on port 7021
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+system.remote_gdb: Listening for connections on port 7026
 gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 version 22.1.0.0
-gem5 compiled Apr 22 2026 16:27:53
-gem5 started May  3 2026 13:19:17
-gem5 executing on computenode3, pid 2097800
-command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/510.parest_r_scheme sim/spec/510.parest_r/sim.py --scheme=Speclfb
+gem5 version 24.1.0.3
+gem5 compiled May  2 2026 19:08:01
+gem5 started May  3 2026 18:12:38
+gem5 executing on computenode3, pid 2146591
+command line: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/510.parest_r_scheme sim/spec/510.parest_r/sim.py --scheme
 
 Beginning simulation for 510.parest_r
-Scheme: Speclfb
+Scheme enabled: True
 Cores: 1
-Binary (relative to speclfb): sim/spec/510.parest_r/parest_r_base.mytest
+Binary (relative to stict): sim/spec/510.parest_r/parest_r_base.mytest
 Core0 args: ['test.prm']
-build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
-build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
-      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/510.parest_r/parest_r_base.mytest'
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+warn: Base 10 memory/cache size 16GB will be cast to base 2 size 16GiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 2048kB will be cast to base 2 size 2048KiB.
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/manual-2/sim/spec/510.parest_r/parest_r_base.mytest'
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 master (0) [2]: Starting master...
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 master (0) [2]: New master parameter discretization: 32 parameter dofs.
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-gem5.opt: build/RISCV/mem/cache/mshr.cc:354: void gem5::MSHR::clearDownstreamPending(): Assertion `downstreamPending' failed.
-Program aborted at tick 1664155019000
---- BEGIN LIBC BACKTRACE ---
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1340620)[0x558786b99620]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1363f9c)[0x558786bbcf9c]
-/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7ffb03445420]
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7ffb0255400b]
-/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7ffb02533859]
-/lib/x86_64-linux-gnu/libc.so.6(+0x22729)[0x7ffb02533729]
-/lib/x86_64-linux-gnu/libc.so.6(+0x33fd6)[0x7ffb02544fd6]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf3ce86)[0x558786795e86]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf3cf62)[0x558786795f62]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf4383b)[0x55878679c83b]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf10931)[0x558786769931]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0xf094b1)[0x5587867624b1]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x1353b82)[0x558786bacb82]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x137b235)[0x558786bd4235]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x137b85b)[0x558786bd485b]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x12e1b60)[0x558786b3ab60]
-/home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt(+0x47844e)[0x558785cd144e]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x2a8748)[0x7ffb036fc748]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x8dd8)[0x7ffb034d1f48]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7ffb0361ee4b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyFunction_Vectorcall+0x94)[0x7ffb036fc124]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7ffb034c8d6d]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x7d86)[0x7ffb034d0ef6]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalCodeWithName+0x8fb)[0x7ffb0361ee4b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCodeEx+0x42)[0x7ffb0361f1d2]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyEval_EvalCode+0x1f)[0x7ffb0361f5bf]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x1cfc01)[0x7ffb03623c01]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x25f547)[0x7ffb036b3547]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x74d6d)[0x7ffb034c8d6d]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(_PyEval_EvalFrameDefault+0x12fd)[0x7ffb034ca46d]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(+0x8006b)[0x7ffb034d406b]
-/lib/x86_64-linux-gnu/libpython3.8.so.1.0(PyVectorcall_Call+0x60)[0x7ffb036fc840]
---- END LIBC BACKTRACE ---
-[RUN] 510.parest_r: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/510.parest_r_scheme sim/spec/510.parest_r/sim.py --scheme=Speclfb
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+GaussNewton [1]: Step 0: N=14008, m(u-z)=5.96e-07, beta r(a)=0, J=5.96e-07, error=0.884
+GaussNewton [0]: 
+GaussNewton [0]: Step 1: starting

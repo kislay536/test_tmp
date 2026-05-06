@@ -1,29 +1,35 @@
 Global frequency set at 1000000000000 ticks per second
-build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
-0: system.remote_gdb: listening for remote gdb on port 7001
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (16384 Mbytes)
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+system.remote_gdb: Listening for connections on port 7044
 gem5 Simulator System.  https://www.gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 version 22.1.0.0
-gem5 compiled Apr 22 2026 16:27:53
-gem5 started May  3 2026 13:19:17
-gem5 executing on computenode3, pid 2097750
-command line: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/502.gcc_r_scheme sim/spec/502.gcc_r/sim.py --scheme=Speclfb
+gem5 version 24.1.0.3
+gem5 compiled May  2 2026 19:08:01
+gem5 started May  3 2026 18:12:37
+gem5 executing on computenode3, pid 2146527
+command line: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/502.gcc_r_scheme sim/spec/502.gcc_r/sim.py --scheme
 
 Beginning simulation for 502.gcc_r
-Scheme: Speclfb
+Scheme enabled: True
 Cores: 1
-Binary (relative to speclfb): sim/spec/502.gcc_r/cpugcc_r_base.mytest
+Binary (relative to stict): sim/spec/502.gcc_r/cpugcc_r_base.mytest
 Core0 args: ['t1.c', '-O3', '-finline-limit=50000', '-o', 't1.opts-O3_-finline-limit_50000.s']
-build/RISCV/sim/simulate.cc:192: info: Entering event queue @ 0.  Starting simulation...
-build/RISCV/sim/syscall_emul.hh:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
-      Returning '/home/riscv_sec/stict/working/speclfb2/sim/spec/502.gcc_r/cpugcc_r_base.mytest'
-build/RISCV/sim/mem_state.cc:443: info: Increasing stack size by one page.
-build/RISCV/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
-build/RISCV/sim/syscall_emul.hh:2109: warn: prlimit: unimplemented resource 9
-build/RISCV/sim/syscall_emul.hh:2109: warn: prlimit: unimplemented resource 9
-build/RISCV/sim/syscall_emul.hh:2109: warn: prlimit: unimplemented resource 5
-build/RISCV/sim/syscall_emul.hh:2109: warn: prlimit: unimplemented resource 9
+warn: Base 10 memory/cache size 16GB will be cast to base 2 size 16GiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 2048kB will be cast to base 2 size 2048KiB.
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/riscv_sec/stict/working/manual-2/sim/spec/502.gcc_r/cpugcc_r_base.mytest'
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.hh:2254: warn: prlimit: unimplemented resource 9
+src/sim/syscall_emul.hh:2254: warn: prlimit: unimplemented resource 9
+src/sim/syscall_emul.hh:2254: warn: prlimit: unimplemented resource 5
+src/sim/syscall_emul.hh:2254: warn: prlimit: unimplemented resource 9
 t1.c:2:5: warning: conflicting types for built-in function 'printf'
-Exiting @ tick 7810393000 because exiting with last active thread context
-[RUN] 502.gcc_r: /home/riscv_sec/stict/working/speclfb2/build/RISCV/gem5.opt -d spec_result/502.gcc_r_scheme sim/spec/502.gcc_r/sim.py --scheme=Speclfb
+Exiting @ tick 9696508000 because exiting with last active thread context
+[RUN] 502.gcc_r: /home/riscv_sec/stict/working/manual-2/build/RISCV/gem5.opt -d spec_result/502.gcc_r_scheme sim/spec/502.gcc_r/sim.py --scheme
